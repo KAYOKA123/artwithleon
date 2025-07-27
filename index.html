@@ -1,0 +1,155 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtWithLeon | Visual Identity Studio</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="welcome">
+    <h1>Welcome to <span>ArtWithLeon</span></h1>
+    <p>I’m Leonard, an aspiring Electrical Engineer with a deep-rooted passion for design, innovation, and visual storytelling...</p>
+    <a href="#contact" class="cta">Let's Collaborate</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Leonard, the creative mind behind <strong>ArtWithLeon</strong>. As an aspiring Electrical Engineer with a flair for branding and design, I bridge the worlds of logic and creativity. My journey began in tech labs and evolved into digital canvases, where I now specialize in clean, purposeful visual identity.
+    </p>
+    <p>
+      Whether it's designing logos, customizing social profiles, or creating standout posters and CVs—my goal is always to tell a story that feels authentic, unique, and powerful. Engineering taught me structure. Design gave me voice.
+    </p>
+  </section>
+
+  <section id="services">
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="gallery">
+          <div class="project-card">
+            <img src="assets/logo1.jpg" alt="Logo Project">
+            <p>Minimalist Logo Design</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/logo2.png" alt="Logo Project">
+            <p>Minimalist Logo Design</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster1.png" alt="Poster Project">
+            <p>Event Charity Poster</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster2.png" alt="Poster Project">
+            <p>WG foundation Poster</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster3.png" alt="Poster Project">
+            <p>ATC Poster</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster4.png" alt="Poster Project">
+            <p>WG Foundation Poster</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster5.png" alt="Poster Project">
+            <p>Promo Poster</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/poster6.png" alt="Poster Project">
+            <p>Our Services</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/cv1.png" alt="CV Project">
+            <p>Professional CV Template</p>
+          </div>
+        </div>
+      </section>
+    <h2>What I Offer</h2>
+    <div class="services-container">
+
+      <div class="service-card">
+        <i class="fas fa-pen-nib service-icon"></i>
+        <h3>Logo Design</h3>
+        <p>Minimalist, modern, and memorable logo designs tailored for your brand identity.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-palette service-icon"></i>
+        <h3>Branding & Identity</h3>
+        <p>Helping you level up with cohesive visual branding for businesses and personal brands.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-bullhorn service-icon"></i>
+        <h3>Posters & Flyers</h3>
+        <p>Creative, eye-catching promo materials for events, campaigns, and online sharing.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-share-alt service-icon"></i>
+        <h3>Social Media Customization</h3>
+        <p>Stylized highlights, bios, covers, and templates to make your profiles pop.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-file-alt service-icon"></i>
+        <h3>Professional CV Writing</h3>
+        <p>Clean, job-ready CVs that communicate your strengths with style and structure.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-address-card service-icon"></i>
+        <h3>Business & Invitation Cards</h3>
+        <p>Custom-designed cards for networking, weddings, events, and special occasions.</p>
+      </div>
+
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 ArtWithLeon. All Rights Reserved.</p>
+    <p>Built with 💻 and 🎨 by Leon</p>
+    <div class="social-links">
+      <a href="https://wa.me/255625504604" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/artwithleon_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:leonardkayoka05@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+  <button id="scrollToTopBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+  
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
